@@ -42,17 +42,65 @@ p{
     color: lavender;
     text-align: left;
     padding-left: 15%;
-    font-weight: 700;
-    font-size: 15px;
+    font-size: 18px;
     font-family: cursive
 }
 p1{
-    color: white;
-    text-align: center;
-    font-weight: 500;
+    color: lavender;
+    text-align: left;
     font-size: 15px;
     font-style: italic;
 }
+.column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+      }
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .image  a {
+        display: none;
+      }
+
+      .image  a:hover {
+        display: block;
+      }
+
+      .nandhu {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: 1.0s ease;
+        background-color: black; 
+        text-align: center;
+      }
+
+      .raj {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      .column {
+        position: relative;
+        width: 32%;
+      }
+
+      .column:hover .nandhu {
+        opacity: 1;
+      }
 </style>
 </head>
 <body>
@@ -60,7 +108,7 @@ p1{
     <div class="topnav">
         <a href="index.html">Home</a>
           <a href="General Grivences.html">General Responses</a>
-          <img id="logo "src="https://static.wixstatic.com/media/369568_3d58f0a321aa4b2e98a000955bceaac8~mv2.jpg/v1/fill/w_912,h_136,al_c,q_80,usm_0.66_1.00_0.01/logo%203.webp" style="height: 70px; padding-left: 280px;">
+          <img id="logo "src="https://raw.githubusercontent.com/nani-swaroop/College-webpage/master/images/logo%203.webp" style="height: 70px; padding-left: 280px;">
         <div class="topnav-right">
           <a class="active" href="Academic Grivences.html">Academic Respponses</a>
           <a href="Queires.html">Queires</a>
@@ -68,13 +116,22 @@ p1{
       </div>
 
 <div style="padding-left:16px;text-align: center; margin-top: 50px;">
-  <h2 style="color: white;font-size: 50px; font-style: oblique;">General Responses</h2>
-  <h4 style="color: white;font-size: 30px;">We have divided the general responses into three sectors namely,</h4><br><br>
-  <p>1. Technical Forum : Here you can share your ideas regarding technical matters like Projects - ideas, developments and models , events etc.</p>
-  <p>2. Facilities : If there is any issues in the facilities provided by our college like library , cafeteria , water etc. </p>
-  <p>3. Sports Forum : If you are facing any issues regarding sports like shortage of kits, time allocation etc. </p><br><br>
-  <p1>Note : While submitting your issues , try to suggest solution as well</p1>
+  <h2 style="color: white;font-size: 50px; font-style: oblique;">Student's Academic Responses</h2>
+  <p>Utilize this section, only if you have any issues related to academics. Your issue may be related to teaching methodologies followed by any faculty or issues which could not be addressed by concerned faculty members in theory, laboratories or any other. Without hesitation, you may submit your issues here with more confidentially and the same will be resolved with high priority basis. This mode of issues addressing will not reveal your identity at any cost. </p>
+  <br><p>Feel free and get rid of any issues successfully.</p>
 </div><br><br><br><br><br><br><br>
+
+<div class="row">
+  <div class="column">
+    <img src="https://github.com/nani-swaroop/College-webpage/blob/master/images/306179-books.jpg?raw=true" alt="Snow" style="width:100%">
+    <div class="nandhu">
+      <div class="raj">
+        <h style="font-size: 35px;">Academic Form</h><br><br><br>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqP4geoNvuwQ8aL_6pVG92ZvD5jvWkw_KUI2CoUrK_b2baHQ/viewform" style="color: #f2f2f2; font-size: 20px;">Click here</a>
+      </div>
+    </div>
+  </div>
+</div><br><br><br>
 
 </body>
 <footer>

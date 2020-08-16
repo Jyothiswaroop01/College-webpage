@@ -9,24 +9,23 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #1a1e1f;
 }
-
 .topnav {
   overflow: hidden;
-  background-color: #1a1e1f;
-  
+  background-color: none;
 }
 
 .topnav a {
   float: left;
+  display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 10px 20px;
+  padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #f17704;
   color: black;
 }
 
@@ -35,31 +34,201 @@ body {
   color: white;
 }
 
-.topnav-right {
-  float: right;
+.topnav .icon {
+  display: none;
 }
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+p{
+    color: lavender;
+    text-align: left;
+    padding-left: 15%;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: cursive
+}
+p1{
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    font-style: italic;
+}
+.column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+      }
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .image  a {
+        display: none;
+      }
+
+      .image  a:hover {
+        display: block;
+      }
+
+      .nandhu {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: 1.0s ease;
+        background-color: black; 
+        text-align: center;
+      }
+
+      .raj {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      .column {
+        position: relative;
+        width: 32%;
+      }
+
+      .column:hover .nandhu {
+        opacity: 1;
+      }
+      hr {
+          width: 50%;
+          height: 10px;
+          background-color: lavender;
+          margin-right: auto;
+          margin-left: auto;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          border-width: 1px;
+          border-color: black;
+          border-radius: 50%;
+      }
+</style>
 </style>
 </head>
 <body>
+  <img src="https://raw.githubusercontent.com/nani-swaroop/College-webpage/master/images/logo%203.webp" style="margin-left: 25%;height: 100px;">
 
-<div class="topnav">
-	<a class="active" href="index.html">Home</a>
-    <a href="General Grivences.html">General Grivences</a>
-    <img id="logo "src="https://raw.githubusercontent.com/nani-swaroop/College-webpage/master/images/logo%203.webp" style="height: 70px; padding-left: 280px;">
-  <div class="topnav-right">
-    <a href="Academic Grivences.html">Academic Grivences</a>
-    <a href="Queires.html">Queires</a>
+  <div class="topnav" id="myTopnav">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="active">Home</a>
+    <a href="#general">General Responses</a>
+    <a href="#academic">Academic Responses</a>
+    <a href="#get">Get in touch</a>
   </div>
-</div>
-
+<div id="home">
 <div style="padding-left:16px;text-align: center; margin-top: 50px;">
   <img src="https://raw.githubusercontent.com/nani-swaroop/College-webpage/master/images/college.webp" class="img">	 
   <h2 style="color: white;font-size: 50px;">SREE DATTHA INSTITUTE OF ENGINEERING AND SCIENCE</h2>
   <h3 style="color: white;font-size: 30px;">Exactly What You Need</h3>
   <h4 style="color: white;font-size: 15px;">We are here to provide solutions for your responses</h4>
+</div>
+</div><br><br><br><br><br><br><br><hr>
+<div id="general">
+<div style="padding-left:16px;text-align: center; margin-top: 50px;">
+  <h2 style="color: white;font-size: 50px; font-style: oblique;">General Responses</h2>
+  <h4 style="color: white;font-size: 30px;">We have divided the general responses into three sectors namely,</h4><br><br>
+  <p>1. Technical Forum : Here you can share your ideas regarding technical matters like Projects - ideas, developments and models , events etc.</p>
+  <p>2. Facilities : If there is any issues in the facilities provided by our college like library , cafeteria , water etc. </p>
+  <p>3. Sports Forum : If you are facing any issues regarding sports like shortage of kits, time allocation etc. </p><br><br>
+  <p1>Note : While submitting your issues , try to suggest solution as well</p1><br><br><br><br><br><br><br>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="https://raw.githubusercontent.com/nani-swaroop/College-webpage/master/images/Technical.webp" alt="Snow" style="width:100%">
+    <div class="nandhu">
+      <div class="raj">
+        <h style="font-size: 35px;">Technical form</h><br><br><br>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkfpJ5Rb22CDqS9xJJ9wx0uklHgoOOgWzeprPiJ0Kb0g9M1g/viewform" style="color: #f2f2f2; font-size: 20px;">Click here</a>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <img src="https://raw.githubusercontent.com/nani-swaroop/College-webpage/master/images/library.webp" alt="Forest" style="width:100%">
+    <div class="nandhu">
+      <div class="raj">
+        <h style="font-size: 35px;">Facilites form</h><br><br><br>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfU55KeBS4i2SHyCUnS-pjTVXRs0Dr5i1TAwWuVCGJYiXUzMw/viewform" style="color: #f2f2f2;font-size: 20px;">Click here</a>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <img src="https://raw.githubusercontent.com/nani-swaroop/College-webpage/master/images/Sports.webp" alt="Mountains" style="width:100%">
+    <div class="nandhu">
+      <div class="raj">
+        <h style="font-size: 35px;">Sports form</h><br><br><br>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfjScebG8QSBYwJa2hdQfBSITCz3D3FmXTWwI-V_SZd5JQT4Q/viewform" style="color: #f2f2f2;font-size: 20px;">Click here</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div><br><br><br><br><br><br><br><hr>
+
+<div id="academic">
+<div style="padding-left:16px;text-align: center; margin-top: 50px;">
+  <h2 style="color: white;font-size: 50px; font-style: oblique;">Student's Academic Responses</h2>
+  <p>Utilize this section, only if you have any issues related to academics. Your issue may be related to teaching methodologies followed by any faculty or issues which could not be addressed by concerned faculty members in theory, laboratories or any other. Without hesitation, you may submit your issues here with more confidentially and the same will be resolved with high priority basis. This mode of issues addressing will not reveal your identity at any cost. </p>
+  <br><p>Feel free and get rid of any issues successfully.</p>
 </div><br><br><br><br><br><br><br>
 
-</body>
+<div class="row">
+  <div class="column">
+    <img src="https://github.com/nani-swaroop/College-webpage/blob/master/images/306179-books.jpg?raw=true" alt="Snow" style="width:100%">
+    <div class="nandhu">
+      <div class="raj">
+        <h style="font-size: 35px;">Academic Form</h><br><br><br>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqP4geoNvuwQ8aL_6pVG92ZvD5jvWkw_KUI2CoUrK_b2baHQ/viewform" style="color: #f2f2f2; font-size: 20px;">Click here</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div><br><br><br><br><br><br>
+<hr><br><br><br><br><br><br>
+
+<div id="get">
+<div>
+  <h3 style="text-align: center; font-size: 30px;color: lavender; ">Get in touch</h3>
+<h4 style="text-align: center; font-size: 20px;color: white;">Sheriguda , Ibrahimpatnam , Hyderabad , Rangareddy  - 501510</h4>
+<h4 style="text-align: center; font-size: 15px;color: white;"><a href="mailto:sdeseceresponses@sreedattha.ac.in" style="color: lavender;">sdeseceresponses@sreedattha.ac.in</a></h4>
+</div>
+</div>
+</body><br><br><br><br><br><br>
+<hr><br><br><br><br>
 <footer>
   <div>
     <h1 style="text-align: center; color: coral;">Developed by ECE dept-SDES </h1>
